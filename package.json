@@ -1,14 +1,16 @@
 {
   "name": "auth-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev src/app.ts",
+    "start": "ts-node src/app.ts",
+    "build": "echo 'Skipping build step...'"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Esha Jha",
+  "license": "MIT",
+  "description": "A secure Node.js + TypeScript authentication API using MySQL and JWT.",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "dotenv": "^17.2.0",
